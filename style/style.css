@@ -8,8 +8,6 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
-}
-
 .container {
   height: 100vh;
   width: 100vh;
@@ -300,3 +298,4 @@ body {
     font-size: 1rem;
     font-weight: lighter;
   }
+}
