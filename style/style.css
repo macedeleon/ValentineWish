@@ -9,7 +9,7 @@ body {
 }
 
 .tulips {
-  bottom: -10px;
+  bottom: 0px;
   height: 200px;
   left: 0;
   overflow: hidden;
