@@ -4,32 +4,7 @@ const animationTimeline = () => {
   const textBoxChars = document.getElementsByClassName("hbd-chatbox")[0];
   const hbd = document.getElementsByClassName("wish-hbd")[0];
 
-  // Repeat tulip SVG in container  
-var tulipsContainer = $('.tulips').width(),
-    tulipContainer = $('.tulip').width(),
-    repeatTulip = Math.floor(tulipsContainer/tulipContainer),
-    tulips = $('.tulips').html()
-      
-for(var i = 1; i <= repeatTulip; i++) {
-  $('.tulips').append(tulips);
-}
-
-// With a lot great input from @PointC and @mikel at the Greensock club
-TweenLite.defaultEase = Linear.easeNone;
-const time = 3;
-const d = 0.2;
-const master = new TimelineMax({repeat:-1, yoyo:true, paused:true});
-
-TweenMax.set(".flower, .leftleaf, .rightleaf", { transformOrigin:"center bottom"});
-
-for (i = 1; i < 5; i++) {
-  tl = new TimelineMax();
-  tl.to("#tulip" + i + " .flower", time, {rotation: -20}, 0);
-  tl.to("#tulip" + i + " .leftleaf", time, {rotation: 5}, 0);
-  tl.to("#tulip" + i + " .rightleaf", time, {rotation: 5}, 0);
-  tl.to(".stemStart" + i , time, {morphSVG:".stemEnd" + i}, 0);
-  master.add(tl, (i-1) * d);
-}
+ 
 
 master.play();
   textBoxChars.innerHTML = `<span>${textBoxChars.innerHTML
