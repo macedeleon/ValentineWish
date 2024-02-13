@@ -8,23 +8,6 @@ body {
   font-family: "Work Sans", sans-serif;
 }
 
-.tulips {
-  bottom: 0px;
-  height: 200px;
-  left: 0;
-  overflow: hidden;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-  z-index: 1;
-}
-
-.tulips svg {
-  margin: 0 -5px;
-}
-
-.stemEnd1, .stemEnd2, .stemEnd3, .stemEnd4 {
-  visibility:hidden;
 }
 
 .container {
